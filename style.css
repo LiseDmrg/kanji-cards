@@ -29,13 +29,19 @@ main {
 	padding: 10px 30px 80px;
 }
 
-input, section {
-	clear: both;
-	padding-top: 10px;
-	display: none;
+input {
+  display: none;
+}
+
+section {
+  clear: both;
+  padding-top: 10px;
+  animation: fadein .8s;
+  display: none;
 }
 
 label {
+	display:inline-block;
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 14px;
@@ -50,16 +56,21 @@ label:hover {
 	background: #F5BCF3;
 }
 
-#jlpt-5:checked ~ #jlpt5-content,
-#jlpt-4:checked ~ #jlpt4-content,
-#jlpt-3:checked ~ #jlpt3-content,
-#jlpt-2:checked ~ #jlpt2-content,
-#jlpt-1:checked ~ #jlpt1-content {
-	display: block;
+#jlpt-5:checked ~ .content-panels #jlpt5-content,
+#jlpt-4:checked ~ .content-panels #jlpt4-content,
+#jlpt-3:checked ~ .content-panels #jlpt3-content,
+#jlpt-2:checked ~ .content-panels #jlpt2-content,
+#jlpt-1:checked ~ .content-panels #jlpt1-content {
+  display: block;
+  margin: auto;
 }
 
-input:checked + label {
-	border-bottom: 2px solid #1d1d1d;
+#jlpt-5:checked ~ .tabs #level-5,
+#jlpt-4:checked ~ .tabs #level-4,
+#jlpt-3:checked ~ .tabs #level-3,
+#jlpt-2:checked ~ .tabs #level-2,
+#jlpt-1:checked ~ .tabs #level-1 {
+  border-bottom: 2px solid #000000;
 	color: #1d1d1d;
 }
 
