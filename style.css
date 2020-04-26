@@ -1,0 +1,77 @@
+/* Color Theme Swatches in Hex 
+.pastel_colors-purple-hex { color: #B5ACFE; }
+.pastel_colors-pink-hex { color: #F5BCF3; }
+.pastel_colors-yellow-hex { color: #FFF8A6; }
+.pastel_colors-green-hex { color: #B7F6D3; }
+.pastel_colors-blue-hex { color: #8DC8DA; }
+
+/* Color Theme Swatches in RGBA 
+.pastel_colors-purple-rgba { color: rgba(181, 172, 254, 1); }
+.pastel_colors-pink-rgba { color: rgba(245, 188, 243, 1); }
+.pastel_colors-yellow-rgba { color: rgba(255, 248, 166, 1); }
+.pastel_colors-green-rgba { color: rgba(183, 246, 211, 1); }
+.pastel_colors-blue-rgba { color: rgba(141, 200, 218, 1); }
+*/
+
+body {
+	background: #8DC8DA;
+	font-family: sans-serif;
+}
+
+main {
+	background: #FFFFFF;
+	width: 80%;
+	margin: 10% auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+	padding: 10px 30px 80px;
+}
+
+input, section {
+	clear: both;
+	padding-top: 10px;
+	display: none;
+}
+
+label {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 14px;
+	display: block;
+	float: left;
+	padding: 10px 30px;
+	cursor: pointer;
+	color: #333333;
+}
+
+label:hover {
+	background: #F5BCF3;
+}
+
+#jlpt-5:checked ~ #jlpt5-content,
+#jlpt-4:checked ~ #jlpt4-content,
+#jlpt-3:checked ~ #jlpt3-content,
+#jlpt-2:checked ~ #jlpt2-content,
+#jlpt-1:checked ~ #jlpt1-content {
+	display: block;
+}
+
+input:checked + label {
+	border-bottom: 2px solid #1d1d1d;
+	color: #1d1d1d;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 2em;
+	color: #37403E;
+	margin: 1em 0 0 0;
+}x
+
+.subtitle {
+	font-size: 1.5em;
+	color: #3CB4CF;
+	margin: 0 0 0.5em 0;
+}
