@@ -1,51 +1,114 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Kana cards test</title>
+	<title>Kanji</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
 	<main>
 		<div class="intro">
-			<h1>Let's practice your kana</h1>
+			<h1>Let's practice your kanji</h1>
 			<p class="subtitle">行くわよ、頑張れ!</p>
 		</div>
-	</div>
-	<input id="jlpt-5" type="radio" name="jlpt-level" checked>
-	<input id="jlpt-4" type="radio" name="jlpt-level">
-	<input id="jlpt-3" type="radio" name="jlpt-level">
-	<input id="jlpt-2" type="radio" name="jlpt-level">
-	<input id="jlpt-1" type="radio" name="jlpt-level">
 
-	<div class="tabs">
-		<label id="level-5" for="jlpt-5">jlpt 5</label>
-		<label id="level-4" for="jlpt-4">jlpt 4</label>
-		<label id="level-3" for="jlpt-3">jlpt 3</label>
-		<label id="level-2" for="jlpt-2">jlpt 2</label>
-		<label id="level-1" for="jlpt-1">jlpt 1</label>
-	</div>
-	
-	<div class="content-panels">
-		<section id="jlpt5-content">
-			<div id="jlpt5_container" class="card_container">
-			</div>
-		</section>
-		<section id="jlpt4-content">
-			<div id="jlpt4_container" class="card_container">
-			</div>
-		</section>
-		<section id="jlpt3-content">
-			<div id="jlpt3_container" class="card_container">
-			</div>
-		</section>
-		<section id="jlpt2-content">
-			<div id="jlpt1_container" class="card_container">
-			</div>
-		</section>
-		<section id="jlpt1-content">
-			<div id="jlpt1_container" class="card_container">
-			</div>
-		</section>
-	</div>
-</main>
+		<input id="jlpt-5-input" type="radio" name="jlpt-level" checked>
+		<input id="jlpt-4-input" type="radio" name="jlpt-level">
+		<input id="jlpt-3-input" type="radio" name="jlpt-level">
+		<input id="jlpt-2-input" type="radio" name="jlpt-level">
+		<input id="quizz-input" type="radio" name="jlpt-level">
+		
+		<div class="tabs">
+			<label id="level-5" for="jlpt-5-input">jlpt 5</label>
+			<label id="level-4" for="jlpt-4-input">jlpt 4</label>
+			<label id="level-3" for="jlpt-3-input">jlpt 3</label>
+			<label id="level-2" for="jlpt-2-input">jlpt 2</label>
+			<label id="quizz" for="quizz-input">quizz</label>
+		</div>
+		<div class="content-panels">
+			<section id="jlpt5-content">
+				<div id="jlpt5_container" class="card_container">
+
+					<!--<div class="flip-card">
+						<div class="flip-card-inner">
+							<div class="flip-card-front">
+								<p>多</p>
+							</div>
+							<div class="flip-card-back">
+								<p>A lot, many</p>
+								<p>ta</p>
+								<p>oo(i)</p>
+								<p>多い (many), 多分 (probably)</p>
+							</div>
+						</div>
+					</div> -->
+				</div>
+			</section>
+			<section id="jlpt4-content">
+				<div id="jlpt4_container" class="card_container">
+				</div>
+			</section>
+			<section id="jlpt3-content">
+				<div id="jlpt3_container" class="card_container">
+				</div>
+			</section>
+			<section id="jlpt2-content">
+				<div id="jlpt2_container" class="card_container">
+				</div>
+			</section>
+			<section id="quizz-content">
+				<div id="quizz-container" class="">
+					<h1>Welcome to the Kanji quizz</h1>
+					<p class="rules">
+						Each test will generate radom list throught kanjis in the level selected.<br>
+						You'll be ask to give the meaning of the kanji.<br>
+						Once you'v submit the answer, you won't be able to change it.<br>
+						A correction sheet will recap your errors at the end.
+					</p>
+
+					<p class="quizz-header">Level ?</p>
+					<input id="quizz-5" type="radio" name="quizz-level" checked>
+					<input id="quizz-4" type="radio" name="quizz-level">
+					<input id="quizz-3" type="radio" name="quizz-level">
+					<input id="quizz-2" type="radio" name="quizz-level">
+
+					<div class="quizz-selector">
+						<label id="q5" for="quizz-5">5</label>
+						<label id="q4" for="quizz-4">4</label>
+						<label id="q3" for="quizz-3">3</label>
+						<label id="q2" for="quizz-2">2</label>
+					</div>
+
+					<p class="quizz-header">How many ?</p>
+					<input id="nb-5" type="radio" name="quizz-nb" checked>
+					<input id="nb-10" type="radio" name="quizz-nb">
+					<input id="nb-20" type="radio" name="quizz-nb">
+					<input id="nb-30" type="radio" name="quizz-nb">
+
+					<div class="quizz-selector">
+						<label id="q5-nb" for="nb-5">5</label>
+						<label id="q10-nb" for="nb-10">10</label>
+						<label id="q20-nb" for="nb-20">20</label>
+						<label id="q30-nb" for="nb-30">30</label>
+					</div>
+
+					<p class="quizz-header">Level ?</p>
+					<input id="quizz-on" type="radio" name="quizz-type" checked>
+					<input id="quizz-kun" type="radio" name="quizz-type">
+					<input id="quizz-meaning" type="radio" name="quizz-type">
+
+					<div class="quizz-selector">
+						<label id="q-on" for="quizz-on">onyomi</label>
+						<label id="q-kun" for="quizz-kun">kunyomi</label>
+						<label id="q-meaning" for="quizz-meaning">Translation</label>
+					</div>
+
+					<p class="quizz-header">All set up ?
+					<button id="quizz-generator">行くぞ</button>
+					</p>
+				</div>
+			</section>
+		</div>
+	</main>
+</body>
+</html>
