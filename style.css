@@ -301,6 +301,7 @@ input[type=text] {
   padding: 1em;
   color: #FFFFFF;
   background-color: #04D9B2;
+  border-radius: 4px;
 }
 
 .bad-answers p {
@@ -308,6 +309,7 @@ input[type=text] {
   padding: 1em;
   color: #FFFFFF;
   background-color: #FF5E6C;
+  border-radius: 4px;
 }
 
 .score {
