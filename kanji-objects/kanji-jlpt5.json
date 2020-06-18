@@ -1,0 +1,623 @@
+{
+  "kanji": [
+    {
+      "char": "一",
+      "meaning": "one, one radical (no.1)",
+      "on": "イチ, イツ",
+      "kun": "ひと-, ひと.つ"
+    },
+    {
+      "char": "七",
+      "meaning": "seven",
+      "on": "シチ",
+      "kun": "なな, なな.つ, なの"
+    },
+    {
+      "char": "万",
+      "meaning": "ten thousand",
+      "on": "マン, バン",
+      "kun": "よろず"
+    },
+    {
+      "char": "三",
+      "meaning": "three",
+      "on": "サン, ゾウ",
+      "kun": "み, み.つ, みっ.つ"
+    },
+    {
+      "char": "上",
+      "meaning": "above, up",
+      "on": "ジョウ, ショウ, シャン",
+      "kun": "うえ, うわ-, かみ, あ.げる, あ.がる, あ.がり, のぼ.る, のぼ.り, のぼ.せる, のぼ.す, よ.す"
+    },
+    {
+      "char": "下",
+      "meaning": "below, down, descend, give, low, inferior",
+      "on": "カ, ゲ",
+      "kun": "した, しも, もと, さ.げる, さ.がる, くだ.る, くだ.り, くだ.す, くだ.さる, お.ろす, お.りる"
+    },
+    {
+      "char": "中",
+      "meaning": "in, inside, middle, mean, center",
+      "on": "チュウ",
+      "kun": "なか, うち, あた.る"
+    },
+    {
+      "char": "九",
+      "meaning": "nine",
+      "on": "キュウ, ク",
+      "kun": "ここの, ここの.つ"
+    },
+    {
+      "char": "二",
+      "meaning": "two, two radical (no.2)",
+      "on": "ニ, ジ",
+      "kun": "ふた, ふた.つ, ふたた.び"
+    },
+    {
+      "char": "五",
+      "meaning": "five",
+      "on": "ゴ",
+      "kun": "いつ, いつ.つ"
+    },
+    {
+      "char": "人",
+      "meaning": "person",
+      "on": "ジン, ニン",
+      "kun": "ひと, -り, -と"
+    },
+    {
+      "char": "今",
+      "meaning": "now",
+      "on": "コン, キン",
+      "kun": "いま"
+    },
+    {
+      "char": "休",
+      "meaning": "rest, day off, retire, sleep",
+      "on": "キュウ",
+      "kun": "やす.む, やす.まる, やす.める"
+    },
+    {
+      "char": "会",
+      "meaning": "meeting, meet, party, association, interview, join",
+      "on": "カイ, エ",
+      "kun": "あ.う, あ.わせる, あつ.まる"
+    },
+    {
+      "char": "何",
+      "meaning": "what",
+      "on": "カ",
+      "kun": "なに, なん, なに-, なん-"
+    },
+    {
+      "char": "先",
+      "meaning": "before, ahead, previous, future, precedence",
+      "on": "セン",
+      "kun": "さき, ま.ず"
+    },
+    {
+      "char": "入",
+      "meaning": "enter, insert",
+      "on": "ニュウ, ジュ",
+      "kun": "い.る, -い.る, -い.り, い.れる, -い.れ, はい.る"
+    },
+    {
+      "char": "八",
+      "meaning": "eight, eight radical (no. 12)",
+      "on": "ハチ",
+      "kun": "や, や.つ, やっ.つ, よう"
+    },
+    {
+      "char": "六",
+      "meaning": "six",
+      "on": "ロク, リク",
+      "kun": "む, む.つ, むっ.つ, むい"
+    },
+    {
+      "char": "円",
+      "meaning": "circle, yen, round",
+      "on": "エン",
+      "kun": "まる.い, まる, まど, まど.か, まろ.やか"
+    },
+    {
+      "char": "出",
+      "meaning": "exit, leave",
+      "on": "シュツ, スイ",
+      "kun": "で.る, -で, だ.す, -だ.す, い.でる, い.だす"
+    },
+    {
+      "char": "分",
+      "meaning": "part,segment,degree, duty, understand, know, rate,chances",
+      "on": "ブン, フン, ブ",
+      "kun": "わ.ける, わ.け, わ.かれる, わ.かる, わ.かつ"
+    },
+    {
+      "char": "前",
+      "meaning": "in front, before",
+      "on": "ゼン",
+      "kun": "まえ, -まえ"
+    },
+    {
+      "char": "北",
+      "meaning": "north",
+      "on": "ホク",
+      "kun": "きた"
+    },
+    {
+      "char": "十",
+      "meaning": "ten",
+      "on": "ジュウ, ジッ, ジュッ",
+      "kun": "とお, と"
+    },
+    {
+      "char": "千",
+      "meaning": "thousand",
+      "on": "セン",
+      "kun": "ち"
+    },
+    {
+      "char": "午",
+      "meaning": "noon, sign of the horse",
+      "on": "ゴ",
+      "kun": "うま"
+    },
+    {
+      "char": "半",
+      "meaning": "half, middle, odd number",
+      "on": "ハン",
+      "kun": "なか.ば"
+    },
+    {
+      "char": "南",
+      "meaning": "south",
+      "on": "ナン, ナ",
+      "kun": "みなみ"
+    },
+    {
+      "char": "友",
+      "meaning": "friend",
+      "on": "ユウ",
+      "kun": "とも"
+    },
+    {
+      "char": "口",
+      "meaning": "mouth",
+      "on": "コウ, ク",
+      "kun": "くち"
+    },
+    {
+      "char": "古",
+      "meaning": "old",
+      "on": "コ",
+      "kun": "ふる.い, ふる-, -ふる.す"
+    },
+    {
+      "char": "右",
+      "meaning": "right",
+      "on": "ウ, ユウ",
+      "kun": "みぎ"
+    },
+    {
+      "char": "名",
+      "meaning": "name, noted, distinguished, reputation",
+      "on": "メイ, ミョウ",
+      "kun": "な, -な"
+    },
+    {
+      "char": "四",
+      "meaning": "four",
+      "on": "シ",
+      "kun": "よ, よ.つ, よっ.つ, よん"
+    },
+    {
+      "char": "国",
+      "meaning": "country",
+      "on": "コク",
+      "kun": "くに"
+    },
+    {
+      "char": "土",
+      "meaning": "soil, earth, ground, Turkey",
+      "on": "ド, ト",
+      "kun": "つち"
+    },
+    {
+      "char": "外",
+      "meaning": "outside",
+      "on": "ガイ, ゲ",
+      "kun": "そと, ほか, はず.す, はず.れる, と-"
+    },
+    {
+      "char": "多",
+      "meaning": "many, frequent, much",
+      "on": "タ",
+      "kun": "おお.い, まさ.に, まさ.る"
+    },
+    {
+      "char": "大",
+      "meaning": "large, big",
+      "on": "ダイ, タイ",
+      "kun": "おお-, おお.きい, -おお.いに"
+    },
+    {
+      "char": "天",
+      "meaning": "heavens, sky, imperial",
+      "on": "テン",
+      "kun": "あまつ, あめ, あま-"
+    },
+    {
+      "char": "女",
+      "meaning": "woman, female",
+      "on": "ジョ, ニョ, ニョウ",
+      "kun": "おんな, め"
+    },
+    {
+      "char": "子",
+      "meaning": "child, sign of the rat",
+      "on": "シ, ス, ツ",
+      "kun": "こ, -こ, ね"
+    },
+    {
+      "char": "学",
+      "meaning": "study, learning, science",
+      "on": "ガク",
+      "kun": "まな.ぶ"
+    },
+    {
+      "char": "安",
+      "meaning": "relax, cheap, low, quiet, rested, contented, peaceful",
+      "on": "アン",
+      "kun": "やす.い, やす.まる, やす, やす.らか"
+    },
+    {
+      "char": "小",
+      "meaning": "little, small",
+      "on": "ショウ",
+      "kun": "ちい.さい, こ-, お-, さ-"
+    },
+    {
+      "char": "少",
+      "meaning": "few, little",
+      "on": "ショウ",
+      "kun": "すく.ない, すこ.し"
+    },
+    {
+      "char": "山",
+      "meaning": "mountain",
+      "on": "サン, セン",
+      "kun": "やま"
+    },
+    {
+      "char": "川",
+      "meaning": "stream, river",
+      "on": "セン",
+      "kun": "かわ"
+    },
+    {
+      "char": "左",
+      "meaning": "left",
+      "on": "サ, シャ",
+      "kun": "ひだり"
+    },
+    {
+      "char": "年",
+      "meaning": "year, counter for years",
+      "on": "ネン",
+      "kun": "とし"
+    },
+    {
+      "char": "店",
+      "meaning": "store, shop",
+      "on": "テン",
+      "kun": "みせ, たな"
+    },
+    {
+      "char": "後",
+      "meaning": "behind, back, later",
+      "on": "ゴ, コウ",
+      "kun": "のち, うし.ろ, うしろ, あと, おく.れる"
+    },
+    {
+      "char": "手",
+      "meaning": "hand",
+      "on": "シュ, ズ",
+      "kun": "て, て-, -て, た-"
+    },
+    {
+      "char": "新",
+      "meaning": "new",
+      "on": "シン",
+      "kun": "あたら.しい, あら.た, あら-, にい-"
+    },
+    {
+      "char": "日",
+      "meaning": "day, sun, Japan, counter for days",
+      "on": "ニチ, ジツ",
+      "kun": "ひ, -び, -か"
+    },
+    {
+      "char": "時",
+      "meaning": "time, hour",
+      "on": "ジ",
+      "kun": "とき, -どき"
+    },
+    {
+      "char": "書",
+      "meaning": "write",
+      "on": "ショ",
+      "kun": "か.く, -が.き, -がき"
+    },
+    {
+      "char": "月",
+      "meaning": "month, moon",
+      "on": "ゲツ, ガツ",
+      "kun": "つき"
+    },
+    {
+      "char": "木",
+      "meaning": "tree, wood",
+      "on": "ボク, モク",
+      "kun": "き, こ-"
+    },
+    {
+      "char": "本",
+      "meaning": "book, present, main, true, real",
+      "on": "ホン",
+      "kun": "もと"
+    },
+    {
+      "char": "来",
+      "meaning": "come, due, next, cause, become",
+      "on": "ライ, タイ",
+      "kun": "く.る, きた.る, きた.す, き.たす, き.たる, き, こ"
+    },
+    {
+      "char": "東",
+      "meaning": "east",
+      "on": "トウ",
+      "kun": "ひがし"
+    },
+    {
+      "char": "校",
+      "meaning": "exam, school, printing, proof, correction",
+      "on": "コウ, キョウ",
+      "kun": ""
+    },
+    {
+      "char": "母",
+      "meaning": "mama, mother",
+      "on": "ボ",
+      "kun": "はは, も"
+    },
+    {
+      "char": "毎",
+      "meaning": "every",
+      "on": "マイ",
+      "kun": "ごと, -ごと.に"
+    },
+    {
+      "char": "気",
+      "meaning": "spirit, mind, air, atmosphere, mood",
+      "on": "キ, ケ",
+      "kun": "いき"
+    },
+    {
+      "char": "水",
+      "meaning": "water",
+      "on": "スイ",
+      "kun": "みず, みず-"
+    },
+    {
+      "char": "火",
+      "meaning": "fire",
+      "on": "カ",
+      "kun": "ひ, -び, ほ-"
+    },
+    {
+      "char": "父",
+      "meaning": "father",
+      "on": "フ",
+      "kun": "ちち"
+    },
+    {
+      "char": "生",
+      "meaning": "life, genuine, birth",
+      "on": "セイ, ショウ",
+      "kun": "い.きる, い.かす, い.ける, う.まれる, う.まれ, うまれ, う.む, お.う, は.える, は.やす, き, なま, なま-, な.る, な.す, む.す, -う"
+    },
+    {
+      "char": "男",
+      "meaning": "male",
+      "on": "ダン, ナン",
+      "kun": "おとこ, お"
+    },
+    {
+      "char": "白",
+      "meaning": "white",
+      "on": "ハク, ビャク",
+      "kun": "しろ, しら-, しろ.い"
+    },
+    {
+      "char": "百",
+      "meaning": "hundred",
+      "on": "ヒャク, ビャク",
+      "kun": "もも"
+    },
+    {
+      "char": "目",
+      "meaning": "eye, class, look, insight, experience, care, favor",
+      "on": "モク, ボク",
+      "kun": "め, -め, ま-"
+    },
+    {
+      "char": "社",
+      "meaning": "company, firm, office, association, shrine",
+      "on": "シャ",
+      "kun": "やしろ"
+    },
+    {
+      "char": "空",
+      "meaning": "empty, sky, void, vacant, vacuum",
+      "on": "クウ",
+      "kun": "そら, あ.く, あ.き, あ.ける, から, す.く, す.かす, むな.しい"
+    },
+    {
+      "char": "立",
+      "meaning": "stand up",
+      "on": "リツ, リュウ, リットル",
+      "kun": "た.つ, た.ち-, た.てる, た.て-, たて-"
+    },
+    {
+      "char": "耳",
+      "meaning": "ear",
+      "on": "ジ",
+      "kun": "みみ"
+    },
+    {
+      "char": "聞",
+      "meaning": "hear, ask, listen",
+      "on": "ブン, モン",
+      "kun": "き.く, き.こえる"
+    },
+    {
+      "char": "花",
+      "meaning": "flower",
+      "on": "カ, ケ",
+      "kun": "はな"
+    },
+    {
+      "char": "行",
+      "meaning": "going, journey",
+      "on": "コウ, ギョウ, アン",
+      "kun": "い.く, ゆ.く,おこな.う, おこ.なう"
+    },
+    {
+      "char": "西",
+      "meaning": "west, Spain",
+      "on": "セイ, サイ, ス",
+      "kun": "にし"
+    },
+    {
+      "char": "見",
+      "meaning": "see, hopes, idea, opinion, look at, visible",
+      "on": "ケン",
+      "kun": "み.る, み.える, み.せる"
+    },
+    {
+      "char": "言",
+      "meaning": "say",
+      "on": "ゲン, ゴン",
+      "kun": "い.う, こと"
+    },
+    {
+      "char": "話",
+      "meaning": "tale, talk",
+      "on": "ワ",
+      "kun": "はな.す, はなし"
+    },
+    {
+      "char": "語",
+      "meaning": "word, speech, language",
+      "on": "ゴ",
+      "kun": "かた.る, かた.らう"
+    },
+    {
+      "char": "読",
+      "meaning": "read",
+      "on": "ドク, トク, トウ",
+      "kun": "よ.む, -よ.み"
+    },
+    {
+      "char": "買",
+      "meaning": "buy",
+      "on": "バイ",
+      "kun": "か.う"
+    },
+    {
+      "char": "足",
+      "meaning": "leg, foot, be sufficient, counter for pairs of footwear",
+      "on": "ソク",
+      "kun": "あし, た.りる, た.る, た.す"
+    },
+    {
+      "char": "車",
+      "meaning": "car",
+      "on": "シャ",
+      "kun": "くるま"
+    },
+    {
+      "char": "週",
+      "meaning": "week",
+      "on": "シュウ",
+      "kun": ""
+    },
+    {
+      "char": "道",
+      "meaning": "road-way, street, district, journey, course, moral, teachings",
+      "on": "ドウ, トウ",
+      "kun": "みち"
+    },
+    {
+      "char": "金",
+      "meaning": "gold",
+      "on": "キン, コン, ゴン",
+      "kun": "かね, かな-, -がね"
+    },
+    {
+      "char": "長",
+      "meaning": "long, leader",
+      "on": "チョウ",
+      "kun": "なが.い, おさ"
+    },
+    {
+      "char": "間",
+      "meaning": "interval, space",
+      "on": "カン, ケン",
+      "kun": "あいだ, ま, あい"
+    },
+    {
+      "char": "雨",
+      "meaning": "rain",
+      "on": "ウ",
+      "kun": "あめ, あま-, -さめ"
+    },
+    {
+      "char": "電",
+      "meaning": "electricity",
+      "on": "デン",
+      "kun": ""
+    },
+    {
+      "char": "食",
+      "meaning": "eat, food",
+      "on": "ショク, ジキ",
+      "kun": "く.う, く.らう, た.べる, は.む"
+    },
+    {
+      "char": "飲",
+      "meaning": "drink, smoke, take",
+      "on": "イン, オン",
+      "kun": "の.む, -の.み"
+    },
+    {
+      "char": "駅",
+      "meaning": "station",
+      "on": "エキ",
+      "kun": ""
+    },
+    {
+      "char": "高",
+      "meaning": "tall, high, expensive",
+      "on": "コウ",
+      "kun": "たか.い, たか, -だか, たか.まる, たか.める"
+    },
+    {
+      "char": "魚",
+      "meaning": "fish",
+      "on": "ギョ",
+      "kun": "うお, さかな, -ざかな"
+    }
+  ],
+"level": "5"
+}
