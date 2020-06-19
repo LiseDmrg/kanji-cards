@@ -1,3 +1,7 @@
+/*********************
+	Kanji generation
+*********************/
+
 // get every level label 
 let jlpt5_level_label = document.querySelector('label#level-5');
 let jlpt4_level_label = document.querySelector('label#level-4');
@@ -90,3 +94,211 @@ function generateCards(level_number, kanji_list) {
 	}
 }
 
+/***********************
+	Quizz management
+***********************/
+
+//récupère le bouton de confirmation du quizz
+let quizz_generator_btn = document.querySelector('button#quizz-generator');
+//récupère le div correspondant au quizz 
+let quizz_container = document.getElementById('quizz-container');
+//récupère la section, onglet contenant le quizz
+let quizz_section = document.getElementById('quizz-content');
+
+quizz_generator_btn.addEventListener('click', e => {
+	let level = getQuizzLevel(document.getElementsByName('quizz-level'));
+	//console.log(level);
+	let nb_kanji = getQuizzKanjiNumber(document.getElementsByName('quizz-nb'));
+	//console.log(nb_kanji);
+	let answer_type = new String(getAnswerType(document.getElementsByName('quizz-type')));
+	//console.log(answer_type.toString());
+
+	setQuizzKanji(level, nb_kanji, answer_type);
+});
+
+/*
+	getQuizzLevel(level_list);
+	return Integer the quizz level selected by user
+	param: level_list list of possible levels
+*/
+function getQuizzLevel(level_list) {
+	for (var i = 0; i < level_list.length; i++) {
+		if (level_list[i].checked) {
+			return parseInt(level_list[i].id.substring(6));
+		}
+	}
+}
+
+/*
+	getQuizzKanjiNumber(nb_kanji_list);
+	return Integer the quizz number of kanji selected by user
+	param: nb_kanji_list list of possible levels
+*/
+function getQuizzKanjiNumber(nb_kanji_list) {
+	for (var i = 0; i <  nb_kanji_list.length; i++) {
+		if (nb_kanji_list[i].checked) {
+			return parseInt(nb_kanji_list[i].id.substring(3));
+		}
+	}
+}
+
+/*
+	getAnswerType(answer_type_list);
+	return String the quizz type of answer selected by user
+	param: answer_type_list list of possible answer type
+*/
+function getAnswerType(answer_type_list) {
+	for (var i = 0; i < answer_type_list.length; i++) {
+		if (answer_type_list[i].checked) {
+			return new String(answer_type_list[i].id.substring(6));
+		}
+	}
+}
+
+/*
+	getRandomKanjis(list);
+	return Array that contains list of random kanji
+	param: list of kanjis
+*/
+function getRandomKanjis(list, nb_kanji) {
+	var kanji_list = [];
+	for (var i = 0; i < nb_kanji; i++) {
+		kanji_list[i] = list.kanji[Math.floor((Math.random() * 100) + 1)]; 
+	}
+	return kanji_list;
+}
+
+/*
+	generateQuizz(kanji_list, type_of_response); 
+	generate html element for the quizz 
+	depending on param : kanji_list
+*/
+function generateQuizz(kanji_list, type_of_response) {
+	var generated_quizz = document.createElement('div');
+	generated_quizz.id = 'generated-quizz';
+
+	var cpt = 0;
+	var score = 0;
+
+	let question = document.createElement('p');
+	question.className = 'kanji-quizz';
+	question.id = 'kanji-' + cpt;
+	question.textContent = kanji_list[cpt].char;
+	//console.log(question);
+
+	let response_input = document.createElement('input');
+	response_input.type = 'text';
+	response_input.className = 'input-quizz';
+	response_input.id = 'input-' + cpt;
+	response_input.placeholder = 'your answer';
+	//console.log(response_input);
+
+	let submit_answer_btn = document.createElement('button');
+	submit_answer_btn.className = 'submit-answer';
+	submit_answer_btn.id = 'submit-answer' + cpt;
+	submit_answer_btn.type = 'submit';
+	submit_answer_btn.innerText = 'next';
+	//console.log(submit_answer_btn);
+
+	generated_quizz.appendChild(question);
+	generated_quizz.appendChild(response_input);
+	generated_quizz.appendChild(submit_answer_btn);
+
+	quizz_section.appendChild(generated_quizz);
+
+	// add on click listener that will store the response
+	// and build the answer sheet and score
+	submit_answer_btn.addEventListener('click', e => {
+		store_answer(response_input, submit_answer_btn, kanji_list, type_of_response);
+		// if every questions have been nexted then generate answer sheet
+		if (cpt === kanji_list.length-1) {
+			generated_quizz.remove();
+
+			let answers_container = document.createElement('div');
+			answers_container.className = "answers-container";
+
+			let good_answers = document.createElement('div');
+			good_answers.className = 'good-answers';
+
+			let bad_answers = document.createElement('div');
+			bad_answers.className = 'bad-answers';
+
+			for (var i = 0; i < kanji_list.length; i++) {
+				if (localStorage.getItem('answer-' + i) == localStorage.getItem('correction-' + i)) {
+					score++;
+
+					let ga_text = document.createElement('p');
+					ga_text.textContent = kanji_list[i].char + ' is correct. You answered: ' +localStorage.getItem('answer-' + i);
+					good_answers.appendChild(ga_text);
+				} else {
+					let ba_text = document.createElement('p');
+					ba_text.textContent = kanji_list[i].char + ' is not correct. You answered: ' + localStorage.getItem('answer-' + i) + ', the good answer is: ' + localStorage.getItem('correction-' + i);
+					bad_answers.appendChild(ba_text);
+				} 
+			}
+
+			let score_text = document.createElement('p');
+			score_text.className = 'score';
+			score_text.textContent = score + '/' + kanji_list.length;
+
+			answers_container.appendChild(good_answers);
+			answers_container.appendChild(bad_answers);
+
+			quizz_section.appendChild(answers_container);
+			quizz_section.appendChild(score_text);
+
+			localStorage.clear();
+		} else {
+			cpt++;
+
+			question.id = 'kanji-' + cpt;
+			question.textContent = kanji_list[cpt].char;
+
+			response_input.id = 'input-' + cpt;
+			response_input.value = '';
+			submit_answer_btn.id = 'submit-answer' + cpt;
+		}
+	});
+}
+
+/*
+	setQuizzKanji(level, nb_kanji, type_of_response);
+	set and manage quizz
+*/
+function setQuizzKanji(level, nb_kanji, type_of_response) {
+	
+	var requestKanjiFile = new XMLHttpRequest();
+
+	requestKanjiFile.addEventListener("load", () => {
+		let kanji_list = getRandomKanjis(JSON.parse(requestKanjiFile.responseText), nb_kanji);
+		console.log(kanji_list);
+
+		quizz_container.remove();
+		generateQuizz(kanji_list, type_of_response);
+	});
+
+	requestKanjiFile.open("GET", "./kanji-objects/kanji-jlpt"+level+".json", true);
+	requestKanjiFile.send();
+}
+
+/*
+	store_answer(cpt, response_input, kanji_list);
+	store answers in local storage
+*/
+function store_answer(response_input, submit_answer_btn, kanji_list, type_of_response) {
+	question_number = submit_answer_btn.id.substring(13);
+	localStorage.setItem('answer-' + question_number, response_input.value);
+
+	console.log(type_of_response.toString());
+	if (type_of_response.toString() === 'meaning') {
+		localStorage.setItem('correction-' + question_number, kanji_list[question_number].meaning);
+	}
+	if (type_of_response.toString() === 'on') {
+		localStorage.setItem('correction-' + question_number, kanji_list[question_number].on);
+	}
+	if (type_of_response.toString() === 'kun') {
+		localStorage.setItem('correction-' + question_number, kanji_list[question_number].kun);
+	}
+
+	
+}
