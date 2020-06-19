@@ -9,4 +9,4 @@ still some features to add :
 
 Overview :
 ----------
-![home kanji](https://github.com/LiseDmrg/kanji-cards/img/overview.png)
+![home kanji](https://github.com/LiseDmrg/kanji-cards/blob/master/img/overview.png)
